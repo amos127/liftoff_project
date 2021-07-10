@@ -6,7 +6,34 @@
 
 <header th:replace="fragments :: header"></header>
 
-<p>view</p>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Mood Score:</th>
+        <th>Energy Score:</th>
+        <th>Breakfast?</th>
+        <th>Lunch?</th>
+        <th>Dinner?</th>
+        <th>Medicine?</th>
+        <th>Number of alcoholic drinks:</th>
+        <th>Number of caffeinated drinks:</th>
+        <th>Exercise?</th>
+        <th>Outside Time?</th>
+    </tr>
+    </thead>
+    <tr th:text="${dailyLog.date}"></tr>
+    <tr th:text="${dailyLog.moodScore}"></tr>
+    <tr th:text="${dailyLog.energyScore}"></tr>
+    <tr th:text="${dailyLog.ateBreakfast}"></tr>
+    <tr th:text="${dailyLog.ateLunch}"></tr>
+    <tr th:text="${dailyLog.ateDinner}"></tr>
+    <tr th:text="${dailyLog.tookMedicine}"></tr>
+    <tr th:text="${dailyLog.alcoholicDrinks}"></tr>
+    <tr th:text="${dailyLog.caffeinatedDrinks}"></tr>
+    <tr th:text="${dailyLog.didExercise}"></tr>
+    <tr th:text="${dailyLog.wentOutside}"></tr>
+</table>
 
 </body>
 </html>
